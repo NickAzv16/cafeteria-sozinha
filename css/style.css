@@ -283,4 +283,8 @@ section {
     background: var(--main-color);
 }
 
+.btn-voltar {
+    display: none;
+}
+
 /* END FOTTER */
