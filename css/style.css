@@ -1,0 +1,286 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+body {
+    background-color: var(--bg);
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* INICIO MENU */
+.header {
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: var(--bg);
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .menu {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+.header .menu a {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.header .menu a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    font-size: 2.05rem;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.icons img {
+    cursor: pointer;
+}
+
+.icons img:hover {
+    height: 35px;
+    width: 35px;
+}
+
+/* FIM MENU */
+
+/* COMEÇO HOME */
+.home {
+    background: url("../img/home-img.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.home .container-home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.home .container-home .content {
+    color: #fff;
+    max-width: 60rem;
+    line-height: 1.3;
+}
+
+.home .container-home .content h2 {
+    font-size: 6rem;
+}
+
+.home .container-home .content p {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    line-height: 1.8;
+}
+
+.btn {
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    display: inline-block;
+}
+
+.btn:hover {
+    letter-spacing: 0.1rem;
+}
+
+/* FIM HOME */
+
+
+/* START ABOUT */
+
+.title {
+    text-align: center;
+}
+
+.title {
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 4rem;
+    padding: 4rem 0;
+
+    span {
+        font-size: 4rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+.about .box {
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    gap: 1.5rem;
+}
+
+.about .box .box-content {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.about .box .box-content h2 {
+    font-size: 3rem;
+}
+
+.about .box .box-content p {
+    font-weight: lighter;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* END ABOUT */
+
+/* START MENU */
+.box-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.box-cards .card {
+    border: var(--border);
+    padding: 5rem;
+    text-align: center;
+    color: #fff;
+    line-height: 1.7;
+    cursor: pointer;
+}
+
+.menu .box-cards .card:hover {
+    background-color: #fff;
+}
+
+.menu .box-cards .card:hover>* {
+    color: #010103;
+}
+
+.box-cards .card h3 {
+    font-size: 2rem;
+}
+
+.menu .box-cards .card p {
+    font-size: 2.5rem;
+}
+
+.menu .box-cards .card p span {
+    font-size: 1.4rem;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+.menu .box-cards .card img {
+    height: 95px;
+    width: 95px;
+}
+
+/* END MENU */
+
+/* START REVIEW */
+.review .box-cards .card .person {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.review .box-cards .card p {
+    font-weight: lighter;
+    font-size: 1.4rem;
+    padding: 1.7rem 0;
+}
+
+.review .box-cards .card {
+    line-height: 2;
+    padding: 3rem 2rem;
+}
+
+/* END REVIEW */
+
+/* START ADDRESS */
+.map {
+    text-align: center;
+}
+
+/* END ADDRESS */
+
+/* START FOOTER*/
+/* .footer {
+    padding: 3rem 0;
+}
+
+.footer .icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .icons .icon {
+    padding: 0 1.5rem;
+} */
+
+.footer {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.icon {
+    border-radius: 50%;
+    padding: 1.2rem;
+}
+
+.icon:hover {
+    background: var(--main-color);
+}
+
+/* END FOTTER */
